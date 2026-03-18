@@ -1,4 +1,4 @@
-## Hi, I'm Peter 👋
+## Hi, I'm Peter
 
 Systems engineer specializing in Rust. I build tools for Linux package management, backend infrastructure, and operational software.
 
