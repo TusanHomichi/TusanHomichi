@@ -39,20 +39,22 @@ documentation claims drift from what the code does.
 ### Timeshift — shift scheduling for 911 dispatch centers
 
 [ConaryLabs/Timeshift](https://github.com/ConaryLabs/Timeshift) · Rust/Axum +
-React/TypeScript + PostgreSQL
+React/TypeScript + PostgreSQL · AGPL-3.0
 
-I have worked 911 dispatch for more than twenty years. Timeshift encodes the
-scheduling rules I have lived: seniority-based overtime queues, union contract
-constraints, multi-round vacation bidding, and 26 distinct leave types, on
-multi-tenant PostgreSQL.
+I have worked 911 dispatch for more than twenty years. Timeshift started from the
+real union contracts I schedule under, then got generalized so any center can
+self-host it free instead of paying for a tool that does not understand the
+rules.
 
 Scheduling looks simple until the contract says overtime is offered by seniority
 within classification, skipping anyone already past their weekly cap, with
 refusals tracked on a rolling window that resets differently around holidays.
-That domain knowledge is the part that is hard to buy, and it is why this exists.
+Generic tools do not model that. Knowing which rules actually matter is the part
+that is hard to buy.
 
-Status: feature-complete across scheduling, bidding, leave, and reporting, and
-not currently under active development.
+Covers scheduling, seniority shift bidding, multi-round vacation bidding, 26
+leave codes, overtime callout queues, and CSV reporting on multi-tenant
+PostgreSQL. Not currently under active development.
 
 ### Remi — package conversion and metadata service
 
