@@ -3,9 +3,10 @@
 Systems and backend engineer working in Rust. Linux package management,
 content-addressed storage, atomic transaction models, and multi-tenant services.
 
-**Available for remote contract work (1099).** Gig Harbor, WA — Pacific time,
-with hours that overlap US and European mornings. I work async and in writing:
-specs, design docs, and reviewed pull requests rather than standups.
+**Available for remote work — contract (1099) or employed.** Gig Harbor, WA,
+Pacific time, with hours that overlap European mornings. **Open to relocating to
+Europe.** I work async and in writing: specs, design docs, and reviewed pull
+requests rather than standups.
 
 ---
 
@@ -82,5 +83,7 @@ Linux internals · EROFS · composefs · Ed25519 · Tree-sitter · systemd · ng
 
 ### Contact
 
-Available for remote contract engagements, ideally ongoing rather than one-off.
-Reach me at [conary.io/contact](https://conary.io/contact/).
+Open to remote contract engagements, ideally ongoing rather than one-off, and to
+direct employment with a European company. Reach me at
+[peter@conary.io](mailto:peter@conary.io) or via
+[conary.io/contact](https://conary.io/contact/).
