@@ -4,11 +4,11 @@ Rust systems and backend engineer building package infrastructure, durable local
 
 **Open to remote work and relocation to Europe.** I work best in writing: explicit contracts, design documents, reviewable changes, and proof that the difficult path survives contact with a real machine.
 
-My work is split between open-source infrastructure and personal game/runtime projects. The projects below are the best entry points.
+My work is split between open-source infrastructure at **[Fieldmouse Works](https://github.com/FieldmouseWorks)** and personal game/runtime projects. The projects below are the best entry points.
 
 ## Selected work
 
-### [Conary](https://github.com/ConaryLabs/Conary)
+### [Conary](https://github.com/FieldmouseWorks/Conary)
 
 A cross-distro Linux package manager that installs RPM, DEB, and Arch packages across Fedora, Ubuntu, and Arch while preserving each format's lifecycle semantics.
 
@@ -36,7 +36,7 @@ The public repository is a clean-source project with explicit code/content licen
 
 **Status:** pre-release and under construction.
 
-### [Consolebook](https://github.com/ConaryLabs/consolebook)
+### [Consolebook](https://github.com/FieldmouseWorks/consolebook)
 
 Self-hosted training-record software for emergency communications. The design centers versioned programs, immutable finalized records, acknowledgments, lawful disposition, recovery, and complete portable exports.
 
