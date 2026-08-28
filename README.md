@@ -4,7 +4,7 @@ Rust systems and backend engineer building package infrastructure, durable local
 
 **Open to remote work and relocation to Europe.** I work best in writing: explicit contracts, design documents, reviewable changes, and proof that the difficult path survives contact with a real machine.
 
-Most of my work lives at **[Conary Labs](https://github.com/ConaryLabs)**.
+My work is split between open-source infrastructure and personal game/runtime projects. The projects below are the best entry points.
 
 ## Selected work
 
@@ -18,15 +18,15 @@ Conary applies them through one atomic, content-addressed transaction model with
 
 **Status:** early preview; VM-first.
 
-### [Nomos](https://github.com/ConaryLabs/nomos)
+### [Nomos](https://github.com/TusanHomichi/nomos)
 
 A semantic game runtime designed for AI authors. World facts, capabilities, projections, state transitions, replay, and explanations are explicit contracts rather than prompt-shaped guesses.
 
 **Rust · deterministic systems · WASM · reproducible simulation**
 
-**Status:** active runtime research with a [browser viewer](https://conarylabs.github.io/nomos/).
+**Status:** active runtime research with a [browser viewer](https://tusanhomichi.github.io/nomos/).
 
-### [The Mortal Estate](https://github.com/ConaryLabs/the-mortal-estate)
+### [The Mortal Estate](https://github.com/TusanHomichi/the-mortal-estate)
 
 An original persistent online tactical role-playing game about life, death, inheritance, memory, and a world where former characters remain part of history.
 
