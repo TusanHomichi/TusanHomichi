@@ -65,4 +65,4 @@ The repositories distinguish implemented behavior from design targets. Their REA
 
 For remote systems/backend work, collaboration, or direct employment in Europe:
 
-[peter@conary.io](mailto:peter@conary.io) · [fieldmouseworks.com](https://fieldmouseworks.com)
+[peter@fieldmouseworks.com](mailto:peter@fieldmouseworks.com) · [fieldmouseworks.com](https://fieldmouseworks.com)
