@@ -6,7 +6,7 @@ I'm Peter. I build Linux upgrade tooling, self-hosted public-safety software, an
 
 My infrastructure and public-safety work lives at **[Fieldmouse Works](https://github.com/FieldmouseWorks)**. My personal repositories cover native game reconstruction, persistent worlds, and deterministic runtimes.
 
-**Open to remote systems/backend work and direct employment in Europe.** I work best in writing: clear contracts, design documents, reviewable changes, and evidence from real machines.
+**Looking for systems/backend work, remote or based in Europe.** I live in the Pacific Northwest and would like to move to Europe. I work best in writing: clear contracts, design documents, reviewable changes, and evidence from real machines.
 
 [Fieldmouse Works](https://github.com/FieldmouseWorks) · [Current work](#current-work) · [Other projects](#other-projects) · [Contact](#contact)
 
@@ -63,6 +63,6 @@ The repositories distinguish implemented behavior from design targets. Their REA
 
 ## Contact
 
-For remote systems/backend work, collaboration, or direct employment in Europe:
+For systems/backend roles (remote or based in Europe) or collaboration:
 
 [peter@fieldmouseworks.com](mailto:peter@fieldmouseworks.com) · [fieldmouseworks.com](https://fieldmouseworks.com)
