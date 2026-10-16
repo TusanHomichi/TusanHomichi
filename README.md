@@ -19,7 +19,7 @@ Upgrades an old Linux server to a current release one hop at a time. Each route 
 
 Routes with passing replays: Debian 4.0 etch (2007) to Debian 13, Ubuntu 14.04 to 26.04, and CentOS 5, 7, and 8 to AlmaLinux 10.
 
-**Stage:** early. CI proves each route's userland in a chroot. Kernels, bootloaders, and real reboots are tested in maintainer-run VMs, where four of the five routes have passed; that tier isn't in CI yet. See the [README](https://github.com/FieldmouseWorks/wend#readme) and [spec](https://github.com/FieldmouseWorks/wend/blob/main/SPEC.md).
+**Stage:** early. CI proves each route's userland in a chroot. Kernels, bootloaders, and real reboots are tested separately in maintainer-run VMs, where every route has passed on at least one of its test machines. See the [README](https://github.com/FieldmouseWorks/wend#readme) and [spec](https://github.com/FieldmouseWorks/wend/blob/main/SPEC.md).
 
 ### [Consolebook](https://github.com/FieldmouseWorks/consolebook)
 **Emergency-communications training records · Rust / Axum / SQLite / SvelteKit**
