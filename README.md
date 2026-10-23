@@ -1,10 +1,10 @@
 # Peter Permenter
 
-**Rust systems and backend engineering · Linux infrastructure · Game reconstruction**
+**Rust systems and backend engineering · Linux and agent infrastructure · Game reconstruction**
 
-I'm Peter. I build Linux upgrade tooling, self-hosted public-safety software, and native game reconstructions. I care about software you can inspect, recover, and keep running without a permanent vendor relationship.
+I'm Peter. I build Linux upgrade tooling, infrastructure for running AI coding agents, self-hosted public-safety software, and native game reconstructions. I care about software you can inspect, recover, and keep running without a permanent vendor relationship.
 
-My infrastructure and public-safety work lives at **[Fieldmouse Works](https://github.com/FieldmouseWorks)**. My personal repositories cover native game reconstruction, persistent worlds, and deterministic runtimes.
+My infrastructure, agent tooling and public-safety work lives at **[Fieldmouse Works](https://github.com/FieldmouseWorks)**. My personal repositories cover native game reconstruction, persistent worlds, and deterministic runtimes.
 
 **Looking for systems/backend work, remote or based in Europe.** I live in the Pacific Northwest and would like to move to Europe. I work best in writing: clear contracts, design documents, reviewable changes, and evidence from real machines.
 
@@ -15,11 +15,20 @@ My infrastructure and public-safety work lives at **[Fieldmouse Works](https://g
 ### [wend](https://github.com/FieldmouseWorks/wend)
 **Proven upgrade routes for old Linux machines · Python / Rust**
 
-Upgrades an old Linux server to a current release one hop at a time. Each route uses small, reviewed fixes for the places where a plain release upgrade breaks, and it counts only after a replay from scratch on test machines keeps every health check green. The native package manager stays in charge. A static Rust client (in progress) will walk a route on a real machine, snapshotting before each hop and rolling back if a health check fails. The client uses no model.
+Upgrades an old Linux server to a current release one hop at a time, carrying its services and data along (web server, PHP, database, DNS) and checking they still answer before the next hop. Each route uses small, reviewed fixes for the places where a plain release upgrade breaks, and it counts only after a replay from scratch on test machines keeps every health check green. The native package manager stays in charge. Agents help find the fixes; a static Rust client (in progress) walks a route with no model, snapshotting before each hop and rolling back if a health check fails.
 
 Routes with passing replays: Debian 4.0 etch (2007) to Debian 13, Ubuntu 14.04 to 26.04, and CentOS 5, 7, and 8 to AlmaLinux 10.
 
-**Stage:** early. CI proves each route's userland in a chroot. Kernels, bootloaders, and real reboots are tested separately in maintainer-run VMs, where every route has passed on at least one of its test machines. See the [README](https://github.com/FieldmouseWorks/wend#readme) and [spec](https://github.com/FieldmouseWorks/wend/blob/main/SPEC.md).
+**Stage:** early. CI proves each route's userland in a chroot. Kernels, bootloaders, and real reboots are tested separately in maintainer-run VMs, where every route has passed on real installs with a reboot after every hop. See the [README](https://github.com/FieldmouseWorks/wend#readme) and [spec](https://github.com/FieldmouseWorks/wend/blob/main/SPEC.md).
+
+### [burrow](https://github.com/FieldmouseWorks/burrow)
+**NixOS modules for a machine run by an AI agent · Nix / Shell / Python**
+
+The server I develop on is run by talking to Claude Code, from a phone as often as a desk. burrow is the generic half of that setup. The agent gets the whole machine with no permission prompts, because nearly everything it can do undoes itself: ZFS snapshots before anything deletes files, a dead man's switch that reverts a system change unless it's confirmed within 10 minutes, and trial boots that fall back from a kernel that hangs. The few one-way doors (wiping disks, flashing firmware, deleting remote data, force-pushing main) still ask.
+
+It also keeps the machine current unattended (flake inputs and Claude Code built, VM-tested, health-checked and reverted on failure; Renovate across every repository; new CVEs turned into agent jobs the same hour), hands project work to per-project agent sessions, and gives a risky task its own microVM with allowlisted egress and no GitHub token.
+
+**Stage:** in daily use on one machine; options may still move. VM tests boot the sandboxes under nested KVM. MIT. See the [README](https://github.com/FieldmouseWorks/burrow#readme).
 
 ### [Consolebook](https://github.com/FieldmouseWorks/consolebook)
 **Emergency-communications training records · Rust / Axum / SQLite / SvelteKit**
@@ -33,11 +42,11 @@ One executable, an embedded web interface, and one data directory per installati
 ### [PSIV](https://github.com/TusanHomichi/PSIV)
 **Native game reconstruction · Rust / Godot / Python**
 
-A native reimplementation of *Phantasy Star IV*. Python extracts a local data pack from a user-supplied US ROM, Rust runs the game rules, and Godot handles desktop presentation and input. Development compares native behavior against the original cartridge.
+A native reimplementation of *Phantasy Star IV*, built to be easy to mod. Python extracts a local data pack from a user-supplied US ROM, Rust reproduces the game rules frame by frame, and Godot handles presentation and input. No emulator runs while you play. Development compares native behavior against the original cartridge.
 
-A deterministic campaign route now plays from New Game through Dark Force 2's defeat. Every player technique and skill, and every enemy ability up to that point, is checked against cartridge captures.
+An automated playthrough now runs from New Game to the ending in 84 chapters, and the native game replays all 84 with every chapter save matching byte for byte. Every player technique and skill, and every enemy ability up to Dark Force 2, is implemented from the cartridge's code. There's a [modding guide](https://github.com/TusanHomichi/PSIV/blob/main/docs/MODDING.md).
 
-**Stage:** active development; the campaign and presentation fidelity are not finished. Requires a user-supplied ROM; no ROM or extracted game assets are distributed. See [where it stands](https://github.com/TusanHomichi/PSIV#where-we-are).
+**Stage:** active development; presentation fidelity (some animations, scene staging, audio timing) is not finished. Linux and Steam Deck today; Windows and macOS are part of 1.0. Requires a user-supplied ROM; no ROM or extracted game assets are distributed. See [where it stands](https://github.com/TusanHomichi/PSIV#where-we-are).
 
 ## Other projects
 
@@ -58,6 +67,8 @@ A runtime for AI-authored worlds with explicit facts, capabilities, state transi
 ## How I work
 
 I prefer explicit state and typed contracts over hidden assumptions. Recovery, portability, and failure behavior belong in the design from the start. Documentation and reproducible tests should make it possible for someone else to understand the system and verify the difficult parts.
+
+Most of my code is now written by AI agents working under my direction. So most of my engineering goes into what keeps that honest: specs and contracts the agent works against, evidence a change has to produce before it lands (route replays, cartridge comparisons, VM boots), and machines where a mistake is cheap to undo instead of expensive to prevent.
 
 The repositories distinguish implemented behavior from design targets. Their READMEs and linked status documents are the source of truth as the work evolves.
 
