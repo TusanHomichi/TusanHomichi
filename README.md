@@ -8,7 +8,7 @@ My infrastructure, agent tooling and public-safety work lives at **[Fieldmouse W
 
 **Looking for systems/backend work, remote or based in Europe.** I live in the Pacific Northwest and would like to move to Europe. I work best in writing: clear contracts, design documents, reviewable changes, and evidence from real machines.
 
-[Fieldmouse Works](https://github.com/FieldmouseWorks) · [Current work](#current-work) · [Other projects](#other-projects) · [Contact](#contact)
+[Fieldmouse Works](https://github.com/FieldmouseWorks) · [Current work](#current-work) · [Other projects](#other-projects) · [How I work](#how-i-work) · [Contact](#contact)
 
 ## Current work
 
@@ -71,6 +71,12 @@ A runtime for AI-authored worlds with explicit facts, capabilities, state transi
 I prefer explicit state and typed contracts over hidden assumptions. Recovery, portability, and failure behavior belong in the design from the start. Documentation and reproducible tests should make it possible for someone else to understand the system and verify the difficult parts.
 
 Most of my code is now written by AI agents working under my direction. So most of my engineering goes into what keeps that honest: specs and contracts the agent works against, evidence a change has to produce before it lands (route replays, cartridge comparisons, VM boots), and machines where a mistake is cheap to undo instead of expensive to prevent.
+
+Every pull request in my repositories goes through the same loop. An AI reviewer reads the change, a Claude Code agent fixes or answers each finding and each failed check, and a steward merges only the exact commit that was reviewed and passed CI. Changes that can't be undone, such as secrets and database migrations, wait for me. Each repository's AGENTS.md says what its reviewers must flag, and one shared set of rules is kept in sync across all of them.
+
+I tune the loop from measurements, not impressions. When reviews were slow, I timed each stage and found most of the wait was a 15-minute poll, so every step now starts from a GitHub event, and reviews arrive about 3 minutes after a push. When I ran two reviewers side by side, I scored their findings and cost and dropped the one that didn't pay for itself. When fixes kept taking extra review rounds, the cause was new findings on code the last fix wrote, so each finding now spells out everything a complete fix has to cover.
+
+The machinery is open source in [burrow](https://github.com/FieldmouseWorks/burrow).
 
 The repositories distinguish implemented behavior from design targets. Their READMEs and linked status documents are the source of truth as the work evolves.
 
