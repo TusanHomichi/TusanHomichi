@@ -48,8 +48,8 @@ body, when there is one, says why.
 - What the page says about each project follows that project's own README and
   status docs. Don't claim more than they do.
 - Everything here is public. Contact details are the ones already on the
-  page; don't add others. Peter's work history (his years as a 911 dispatcher,
-  his employer) is his to share, and the page may say it.
+  page; don't add others. Peter's work history (his jobs, how long he held
+  them, who he worked for) is his to share, and the page may say it.
 
 ## Build and test
 
