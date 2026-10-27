@@ -12,6 +12,17 @@ My infrastructure, agent tooling and public-safety work lives at **[Fieldmouse W
 
 ## Current work
 
+### [Consolebook](https://github.com/FieldmouseWorks/consolebook)
+**Training records for 911 centers · Rust / Axum / SQLite / SvelteKit**
+
+I've been a 911 dispatcher for nearly 20 years, in two states. Every new dispatcher spends months in a training program, and every shift produces a daily observation report that decides whether they're released to work alone and can resurface years later in a grievance or a lawsuit. Consolebook keeps those records the way they need to be kept: versioned training programs, daily reports that trainers draft and review together, weekly summaries, task signoffs, and each trainee's complete file. A finalized record never changes; a correction is an amendment that seals a new version, and every export verifies from the file alone.
+
+One executable, an embedded web interface, and one SQLite data directory per center, installed and upgraded with one command. `npm run demo` serves a throwaway installation full of invented records.
+
+<img src="https://raw.githubusercontent.com/FieldmouseWorks/consolebook/main/docs/screenshots/daily-report.png" alt="A trainer writing a daily observation report in Consolebook" width="720">
+
+**Stage:** pre-alpha, [v0.3.0](https://github.com/FieldmouseWorks/consolebook/releases/latest). Usable for development and evaluation; no production or personnel data. Remaining work is tracked in the [roadmap](https://github.com/FieldmouseWorks/consolebook/blob/main/docs/roadmap.md).
+
 ### [wend](https://github.com/FieldmouseWorks/wend)
 **Proven upgrade routes for old Linux machines · Python / Rust**
 
@@ -29,15 +40,6 @@ The server I develop on is run by talking to Claude Code, from a phone as often 
 It also keeps the machine current unattended (flake inputs and Claude Code built, VM-tested, health-checked and reverted on failure; Renovate across every repository; new CVEs turned into agent jobs the same hour), hands project work to per-project agent sessions, and gives a risky task its own microVM with allowlisted egress and no GitHub token.
 
 **Stage:** in daily use on one machine; options may still move. VM tests boot the sandboxes under nested KVM. MIT. See the [README](https://github.com/FieldmouseWorks/burrow#readme).
-
-### [Consolebook](https://github.com/FieldmouseWorks/consolebook)
-**Emergency-communications training records · Rust / Axum / SQLite / SvelteKit**
-
-Self-hosted software for versioned training programs, Daily Observation Reports, weekly summaries, task signoffs, and trainee histories. Implemented workflows include immutable finalized records, acknowledgments, amendments, retention policies and holds, verifiable record exports, trainee packets, and a complete installation export.
-
-One executable, an embedded web interface, and one data directory per installation. A one-command Linux installer handles upgrades, taking a validated backup before any migration.
-
-**Stage:** pre-alpha, [v0.3.0](https://github.com/FieldmouseWorks/consolebook/releases/latest). Usable for development and evaluation; no production or personnel data. Remaining work is tracked in the [roadmap](https://github.com/FieldmouseWorks/consolebook/blob/main/docs/roadmap.md).
 
 ### [PSIV](https://github.com/TusanHomichi/PSIV)
 **Native game reconstruction · Rust / Godot / Python**
