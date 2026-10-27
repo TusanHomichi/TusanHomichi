@@ -48,7 +48,8 @@ body, when there is one, says why.
 - What the page says about each project follows that project's own README and
   status docs. Don't claim more than they do.
 - Everything here is public. Contact details are the ones already on the
-  page; don't add others.
+  page; don't add others. Peter's work history (his jobs, how long he held
+  them, who he worked for) is his to share, and the page may say it.
 
 ## Build and test
 
@@ -61,11 +62,11 @@ Publish by merging to `main`; GitHub shows the new profile straight away.
 
 ## Pull requests
 
-Open PRs as drafts and leave them to the steward: it asks Codex for a review,
-and once Codex finds nothing on your head, every review thread is resolved and
-CI is green, it marks the PR ready and merges it. Fix or answer every finding:
-push the fix and reply with the commit, or reply with why it's wrong, then
-resolve the thread. Don't merge or mark ready yourself.
+Open PRs ready for review, never as drafts, and leave them to the steward: it
+asks Codex for a review, and once Codex finds nothing on your head, every
+review thread is resolved and CI is green, it merges the PR. Fix or answer
+every finding: push the fix and reply with the commit, or reply with why it's
+wrong, then resolve the thread. Don't merge it yourself.
 
 ## Code Review Rules
 
@@ -79,5 +80,6 @@ For reviewers, Codex included. Flag as P1:
   heading renamed while the navigation line still points at it
 - a claim about a project (status, features, license, what's been tested) its
   own README or status docs don't back up
-- personal details beyond what the page already shares (a new address, phone
-  number or location)
+- contact or location details beyond what the page already shares (a new
+  address, email, phone number, or where he lives); his work history is not
+  one of these
