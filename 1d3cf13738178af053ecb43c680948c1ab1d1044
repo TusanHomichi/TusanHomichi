@@ -1,0 +1,41 @@
+{
+  "conary": "note v1",
+  "change": "779q8wkzaf5rxtjy9kwvxvx4cr",
+  "repo": {
+    "owner": "TusanHomichi",
+    "name": "TusanHomichi"
+  },
+  "pr": 8,
+  "url": "https://github.com/TusanHomichi/TusanHomichi/pull/8",
+  "summary": "chore(deps): lock file maintenance (nix)",
+  "task": null,
+  "author": {
+    "kind": "person",
+    "login": "TusanHomichi",
+    "session": null
+  },
+  "landing": {
+    "revision": "b7ff85d2c6d9b116414ea824582c33369bf64a086873c552d6054e10c5e66ff2",
+    "before": "ddeeb503f1cd95c6118b52b56a95069c41361958",
+    "after": "1d3cf13738178af053ecb43c680948c1ab1d1044",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793142778292
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/40464935398/job/122057962758"
+    },
+    {
+      "kind": "ci",
+      "check": "renovate/stability-days",
+      "result": "pass",
+      "source": "https://docs.renovatebot.com/key-concepts/minimum-release-age/"
+    }
+  ]
+}

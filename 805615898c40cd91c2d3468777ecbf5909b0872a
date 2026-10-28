@@ -1,0 +1,41 @@
+{
+  "conary": "note v1",
+  "change": "3s6qf162cnspevgy0bapfhs5yd",
+  "repo": {
+    "owner": "TusanHomichi",
+    "name": "TusanHomichi"
+  },
+  "pr": 12,
+  "url": "https://github.com/TusanHomichi/TusanHomichi/pull/12",
+  "summary": "ci: grant the shared gate what it needs to attest its result",
+  "task": "FieldmouseWorks/Conary#15",
+  "author": {
+    "kind": "agent",
+    "login": "TusanHomichi",
+    "session": "https://claude.ai/code/session_01BkHcyDYaKnE7mRRMdYCFVC"
+  },
+  "landing": {
+    "revision": "9849de93f5bc531bdff6e149538ba162d1638d99cbe2f5cf2a63f09208e94e7c",
+    "before": "925992c642a1e6e1c07d6dc7ba3e94ba572e29db",
+    "after": "805615898c40cd91c2d3468777ecbf5909b0872a",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793142794555
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/40598121377/job/122519122056"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/pull/12#pullrequestreview-5675530754"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "conary": "note v1",
+  "change": "0203bkk4mw4dx6h203kmphrcvm",
+  "repo": {
+    "owner": "TusanHomichi",
+    "name": "TusanHomichi"
+  },
+  "pr": 5,
+  "url": "https://github.com/TusanHomichi/TusanHomichi/pull/5",
+  "summary": "profile: lead with Consolebook, with a screenshot and the demo",
+  "task": null,
+  "author": {
+    "kind": "agent",
+    "login": "TusanHomichi",
+    "session": "https://claude.ai/code/session_01A8jL6BSB2M5KUufXQefcf9"
+  },
+  "landing": {
+    "revision": "34b2108f9b4e67413522ac85e0ac2549c4aa30814e536ead8460de6924eb9523",
+    "before": "3957d83ead65fd08c1d9b276bfecbeb3ae206ff9",
+    "after": "ddeeb503f1cd95c6118b52b56a95069c41361958",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793142775328
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/40454403057/job/122024250084"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/pull/5#pullrequestreview-5662548227"
+    }
+  ]
+}

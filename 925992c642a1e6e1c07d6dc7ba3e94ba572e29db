@@ -1,0 +1,41 @@
+{
+  "conary": "note v1",
+  "change": "58kbh0pddej0v6ggt8zpqgtq2p",
+  "repo": {
+    "owner": "TusanHomichi",
+    "name": "TusanHomichi"
+  },
+  "pr": 11,
+  "url": "https://github.com/TusanHomichi/TusanHomichi/pull/11",
+  "summary": "profile: say how pull requests get reviewed, fixed and merged",
+  "task": "https://claude.ai/code/project/chan_01Ad4f4oDXfFTCEzLHzMTD8q?thread=cmsg_01Ad4f4oDXfFTCEzLHzMTD8qWgmiWonkXVvdukNe15Sf6x",
+  "author": {
+    "kind": "agent",
+    "login": "TusanHomichi",
+    "session": "https://claude.ai/code/session_01KFK6W8tFFpd4562gFnXtgK"
+  },
+  "landing": {
+    "revision": "2c3ad658b3c55f498a2518971785d9e4aa461d848e66bff463810241afbe9a6b",
+    "before": "34a6afc9e18b30f85f2ae6f0c6534c15810f819e",
+    "after": "925992c642a1e6e1c07d6dc7ba3e94ba572e29db",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793142787534
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/40557558002/job/122377567718"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/pull/11#pullrequestreview-5672137838"
+    }
+  ]
+}

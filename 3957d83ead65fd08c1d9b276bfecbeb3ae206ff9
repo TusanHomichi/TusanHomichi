@@ -1,0 +1,41 @@
+{
+  "conary": "note v1",
+  "change": "64t1jmen3apjf6n9vxs9c23rdg",
+  "repo": {
+    "owner": "TusanHomichi",
+    "name": "TusanHomichi"
+  },
+  "pr": 7,
+  "url": "https://github.com/TusanHomichi/TusanHomichi/pull/7",
+  "summary": "agents: let the page share Peter's work history; open PRs ready for review",
+  "task": "FieldmouseWorks/burrow#87",
+  "author": {
+    "kind": "person",
+    "login": "TusanHomichi",
+    "session": null
+  },
+  "landing": {
+    "revision": "2a9e8164a98a70d4d4b671f12e41709346e60a2789f15c319ca2c23b3a72e93d",
+    "before": "d6df028a06034a6e0e611fb0d760c081f88ca553",
+    "after": "3957d83ead65fd08c1d9b276bfecbeb3ae206ff9",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793142772123
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/40451800988/job/122016009566"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/pull/7#pullrequestreview-5662341178"
+    }
+  ]
+}
