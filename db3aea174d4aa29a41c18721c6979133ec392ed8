@@ -1,0 +1,41 @@
+{
+  "conary": "note v1",
+  "change": "7t0h8t15krn610ww2asjbkbx4t",
+  "repo": {
+    "owner": "tusanhomichi",
+    "name": "tusanhomichi"
+  },
+  "pr": 14,
+  "url": "https://github.com/tusanhomichi/tusanhomichi/pull/14",
+  "summary": "readme: fix the PSIV status link and add wend's CentOS 4 route",
+  "task": "https://claude.ai/code/project/chan_01Ad4f4oDXfFTCEzLHzMTD8q?thread=cmsg_01Ad4f4oDXfFTCEzLHzMTD8qGSsbJNVPM6mi8QFtgedrnv",
+  "author": {
+    "kind": "agent",
+    "login": "TusanHomichi",
+    "session": "https://claude.ai/code/session_01BkHcyEHC8NcrBJ1QXRTFnc"
+  },
+  "landing": {
+    "revision": "21f44febe5644b346aa7ec112dda0a68f4f82a2675e13c08506cc60f184c777b",
+    "before": "1358e8d728c386e57ab3e078c13a990287a71190",
+    "after": "db3aea174d4aa29a41c18721c6979133ec392ed8",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793153655803
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/40619214185/job/122588846192"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/pull/14#pullrequestreview-5676933684"
+    }
+  ]
+}
