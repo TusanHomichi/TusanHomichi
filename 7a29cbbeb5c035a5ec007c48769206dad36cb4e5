@@ -1,0 +1,41 @@
+{
+  "conary": "note v1",
+  "change": "0v60jkjvhm5bq3jxg5y12e6abf",
+  "repo": {
+    "owner": "tusanhomichi",
+    "name": "tusanhomichi"
+  },
+  "pr": 19,
+  "url": "https://github.com/tusanhomichi/tusanhomichi/pull/19",
+  "summary": "readme: add Conary, mention burrow's steward",
+  "task": null,
+  "author": {
+    "kind": "person",
+    "login": "TusanHomichi",
+    "session": null
+  },
+  "landing": {
+    "revision": "5fbf3d8b3b48d9c2fbdd77512e438aff2c2ab71f26c9f2174cdc8d28d639bb37",
+    "before": "d5c606e9ab90fce2c5e130dc4554d6cbe26e3155",
+    "after": "7a29cbbeb5c035a5ec007c48769206dad36cb4e5",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793211442580
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/40743088085/job/123009592195"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/pull/19#pullrequestreview-5687566791"
+    }
+  ]
+}
