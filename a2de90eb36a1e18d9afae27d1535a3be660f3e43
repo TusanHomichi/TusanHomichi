@@ -1,0 +1,41 @@
+{
+  "conary": "note v1",
+  "change": "563dzy3mvvfamtpaxb6m9wad5t",
+  "repo": {
+    "owner": "TusanHomichi",
+    "name": "TusanHomichi"
+  },
+  "pr": 15,
+  "url": "https://github.com/TusanHomichi/TusanHomichi/pull/15",
+  "summary": "house: the Pull requests section as burrow's house block",
+  "task": "FieldmouseWorks/burrow#87",
+  "author": {
+    "kind": "agent",
+    "login": "TusanHomichi",
+    "session": "https://claude.ai/code/session_01QzLmB1pT9Tck6N9Vf13a9M"
+  },
+  "landing": {
+    "revision": "ebaa7410bf4c1b5ec05b4caf7f2fcbf851073cbd05724e4f8e30470b257cb773",
+    "before": "db3aea174d4aa29a41c18721c6979133ec392ed8",
+    "after": "a2de90eb36a1e18d9afae27d1535a3be660f3e43",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793160862056
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/40630735204/job/122626237860"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/pull/15#pullrequestreview-5677701952"
+    }
+  ]
+}
