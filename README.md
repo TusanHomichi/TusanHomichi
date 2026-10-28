@@ -59,13 +59,6 @@ An original game about life, death, inheritance, and memory. The player is a lin
 
 **Stage:** pre-release; the public source is not a released game. The [genesis ledger](https://github.com/TusanHomichi/the-mortal-estate/blob/main/docs/plans/genesis-ledger.md#current-checkpoint) tracks progress. Code and original game content have [separate licensing terms](https://github.com/TusanHomichi/the-mortal-estate#licensing).
 
-### [Nomos](https://github.com/TusanHomichi/nomos)
-**Semantic game-runtime research · Rust / WebAssembly**
-
-A runtime for AI-authored worlds with explicit facts, capabilities, state transitions, replay, and explanations. The accepted baseline includes native/WASM execution and an [offline viewer](https://tusanhomichi.github.io/nomos/).
-
-**Stage:** experimental. Runtime expansion is paused until a reference scene is accepted; not adopted into a game. The [current handoff](https://github.com/TusanHomichi/nomos/blob/main/docs/HANDOFF.md) records the baseline and next authorized work.
-
 ## How I work
 
 I prefer explicit state and typed contracts over hidden assumptions. Recovery, portability, and failure behavior belong in the design from the start. Documentation and reproducible tests should make it possible for someone else to understand the system and verify the difficult parts.
