@@ -4,7 +4,7 @@
 
 I'm Peter. I build Linux upgrade tooling, infrastructure for running AI coding agents, self-hosted public-safety software, and native game reconstructions. I care about software you can inspect, recover, and keep running without a permanent vendor relationship.
 
-My infrastructure, agent tooling and public-safety work lives at **[Fieldmouse Works](https://github.com/FieldmouseWorks)**. My personal repositories cover native game reconstruction, persistent worlds, and deterministic runtimes.
+My infrastructure, agent tooling and public-safety work lives at **[Fieldmouse Works](https://github.com/FieldmouseWorks)**. My personal repositories cover native game reconstruction and persistent worlds.
 
 **Looking for systems/backend work, remote or based in Europe.** I live in the Pacific Northwest and would like to move to Europe. I work best in writing: clear contracts, design documents, reviewable changes, and evidence from real machines.
 
