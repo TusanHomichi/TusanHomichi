@@ -1,0 +1,41 @@
+{
+  "conary": "note v1",
+  "change": "0v329w5zwqctwqbc8a9a1v27wc",
+  "repo": {
+    "owner": "tusanhomichi",
+    "name": "tusanhomichi"
+  },
+  "pr": 13,
+  "url": "https://github.com/tusanhomichi/tusanhomichi/pull/13",
+  "summary": "profile: drop nomos now that it is archived",
+  "task": "https://claude.ai/code/project/chan_01Ad4f4oDXfFTCEzLHzMTD8q?thread=cmsg_01Ad4f4oDXfFTCEzLHzMTD8qDHGz7HGVkXVmpWc3KyAaeV",
+  "author": {
+    "kind": "agent",
+    "login": "TusanHomichi",
+    "session": "https://claude.ai/code/session_01BkHcyBa7nQpKXXAEX68JGv"
+  },
+  "landing": {
+    "revision": "3957403a4f056bfd0fcabca8094d06660287fea9ac5b96b3d1beaf32d9a11100",
+    "before": "805615898c40cd91c2d3468777ecbf5909b0872a",
+    "after": "1358e8d728c386e57ab3e078c13a990287a71190",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793153405918
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/40619043671/job/122588282850"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/pull/13#pullrequestreview-5676916154"
+    }
+  ]
+}
