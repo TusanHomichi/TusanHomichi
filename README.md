@@ -28,9 +28,9 @@ One executable, an embedded web interface, and one SQLite data directory per cen
 
 Upgrades an old Linux server to a current release one hop at a time, carrying its services and data along (web server, PHP, database, DNS) and checking they still answer before the next hop. Each route uses small, reviewed fixes for the places where a plain release upgrade breaks, and it counts only after a replay from scratch on test machines keeps every health check green. The native package manager stays in charge. Agents help find the fixes; a static Rust client (in progress) walks a route with no model, snapshotting before each hop and rolling back if a health check fails.
 
-Routes with passing replays: Debian 4.0 etch (2007) to Debian 13, Ubuntu 14.04 to 26.04, and CentOS 5, 7, and 8 to AlmaLinux 10.
+Routes with passing replays: Debian 4.0 etch (2007) to Debian 13, Ubuntu 14.04 to 26.04, and CentOS 4, 5, 7, and 8 to AlmaLinux 10.
 
-**Stage:** early. CI proves each route's userland in a chroot. Kernels, bootloaders, and real reboots are tested separately in maintainer-run VMs, where every route has passed on real installs with a reboot after every hop. See the [README](https://github.com/FieldmouseWorks/wend#readme) and [spec](https://github.com/FieldmouseWorks/wend/blob/main/SPEC.md).
+**Stage:** early. CI proves each route's userland in a chroot. Kernels, bootloaders, and real reboots are tested separately in maintainer-run VMs, where every route except the newest, CentOS 4, has passed on real installs with a reboot after every hop. See the [README](https://github.com/FieldmouseWorks/wend#readme) and [spec](https://github.com/FieldmouseWorks/wend/blob/main/SPEC.md).
 
 ### [burrow](https://github.com/FieldmouseWorks/burrow)
 **NixOS modules for a machine run by an AI agent · Nix / Shell / Python**
@@ -48,7 +48,7 @@ A native reimplementation of *Phantasy Star IV*, built to be easy to mod. Python
 
 An automated playthrough now runs from New Game to the ending in 84 chapters, and the native game replays all 84 with every chapter save matching byte for byte. Every player technique and skill, and every enemy ability up to Dark Force 2, is implemented from the cartridge's code. There's a [modding guide](https://github.com/TusanHomichi/PSIV/blob/main/docs/MODDING.md).
 
-**Stage:** active development; presentation fidelity (some animations, scene staging, audio timing) is not finished. Linux and Steam Deck today; Windows and macOS are part of 1.0. Requires a user-supplied ROM; no ROM or extracted game assets are distributed. See [where it stands](https://github.com/TusanHomichi/PSIV#where-we-are).
+**Stage:** active development; presentation fidelity (some animations, scene staging, audio timing) is not finished. Linux and Steam Deck today; Windows and macOS are part of 1.0. Requires a user-supplied ROM; no ROM or extracted game assets are distributed. See [where it stands](https://github.com/TusanHomichi/PSIV#status).
 
 ## Other projects
 
