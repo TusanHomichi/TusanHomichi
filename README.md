@@ -37,9 +37,16 @@ Routes with passing replays: Debian 4.0 etch (2007) to Debian 13, Ubuntu 14.04 t
 
 The server I develop on is run by talking to Claude Code, from a phone as often as a desk. burrow is the generic half of that setup. The agent gets the whole machine with no permission prompts, because nearly everything it can do undoes itself: ZFS snapshots before anything deletes files, a dead man's switch that reverts a system change unless it's confirmed within 10 minutes, and trial boots that fall back from a kernel that hangs. The few one-way doors (wiping disks, flashing firmware, deleting remote data, force-pushing main) still ask.
 
-It also keeps the machine current unattended (flake inputs and Claude Code built, VM-tested, health-checked and reverted on failure; Renovate across every repository; new CVEs turned into agent jobs the same hour), hands project work to per-project agent sessions, and gives a risky task its own microVM with allowlisted egress and no GitHub token.
+It also keeps the machine current unattended (flake inputs and Claude Code built, VM-tested, health-checked and reverted on failure; Renovate across every repository; new CVEs turned into agent jobs the same hour), runs every pull request through a review-and-merge steward, hands project work to per-project agent sessions, and gives a risky task its own microVM with allowlisted egress and no GitHub token.
 
 **Stage:** in daily use on one machine; options may still move. VM tests boot the sandboxes under nested KVM. MIT. See the [README](https://github.com/FieldmouseWorks/burrow#readme).
+
+### [Conary](https://github.com/FieldmouseWorks/Conary)
+**A ledger for the code agents write · Rust**
+
+Conary keeps the record of code that agents write, on top of git and GitHub: every pull request on the machine with its intent, who made it down to the agent session, its revisions, the checks and reviews that proved it, and where it landed. `cn why FILE:LINE` names the change that brought a line onto trunk, from the ledger or from git notes in any clone, and agents query the same ledger through an MCP server. The log is anchored at a ref on GitHub, so one that loses history is refused.
+
+**Stage:** early development. Recording and `why` work today; undo, always as a new change, is next, and landing changes in place of burrow's steward comes later. MIT. See the [README](https://github.com/FieldmouseWorks/Conary#readme) and [milestones](https://github.com/FieldmouseWorks/Conary/blob/main/docs/DESIGN.md#12-milestones).
 
 ### [PSIV](https://github.com/TusanHomichi/PSIV)
 **Native game reconstruction · Rust / Godot / Python**
@@ -69,7 +76,7 @@ Every pull request in my repositories goes through the same loop. An AI reviewer
 
 I tune the loop from measurements, not impressions. When reviews were slow, I timed each stage and found most of the wait was a 15-minute poll, so every step now starts from a GitHub event, and reviews arrive about 3 minutes after a push. When I ran two reviewers side by side, I scored their findings and cost and dropped the one that didn't pay for itself. When fixes kept taking extra review rounds, the cause was new findings on code the last fix wrote, so each finding now spells out everything a complete fix has to cover.
 
-The machinery is open source in [burrow](https://github.com/FieldmouseWorks/burrow).
+The machinery is open source in [burrow](https://github.com/FieldmouseWorks/burrow), and [Conary](https://github.com/FieldmouseWorks/Conary) keeps the record of every change it lands.
 
 The repositories distinguish implemented behavior from design targets. Their READMEs and linked status documents are the source of truth as the work evolves.
 
