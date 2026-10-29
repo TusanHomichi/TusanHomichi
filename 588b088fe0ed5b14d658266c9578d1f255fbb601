@@ -1,0 +1,35 @@
+{
+  "conary": "note v1",
+  "change": "3xp1h1za7ytx8d84vc0dfm717w",
+  "repo": {
+    "owner": "tusanhomichi",
+    "name": "tusanhomichi"
+  },
+  "pr": 25,
+  "url": "https://github.com/tusanhomichi/tusanhomichi/pull/25",
+  "summary": "chore(deps): update fieldmouseworks/burrow digest to 337b375",
+  "task": null,
+  "author": {
+    "kind": "person",
+    "login": "TusanHomichi",
+    "session": null
+  },
+  "landing": {
+    "revision": "4ddb6f97e7526d01f8aaad44441baf47483a05904e2f21b21ef45035a9b1668f",
+    "before": "eefc48dbef46fb8c718342cee6723dfe81ff92e0",
+    "after": "588b088fe0ed5b14d658266c9578d1f255fbb601",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793234727662
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/40795666806/job/123191429552"
+    }
+  ]
+}
