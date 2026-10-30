@@ -1,0 +1,47 @@
+{
+  "conary": "note v1",
+  "change": "0kgtkmn9gnaq80a58c1xwq26ht",
+  "repo": {
+    "owner": "TusanHomichi",
+    "name": "TusanHomichi"
+  },
+  "pr": 66,
+  "url": "https://github.com/TusanHomichi/TusanHomichi/pull/66",
+  "summary": "profile: describe The Mortal Estate as it stands after its fresh start",
+  "task": "https://claude.ai/code/project/chan_01Ad4f4oDXfFTCEzLHzMTD8q?thread=cmsg_01Ad4f4oDXfFTCEzLHzMTD8qGocvgtmfL3sKSYoYNZ5nTT",
+  "author": {
+    "kind": "agent",
+    "login": "TusanHomichi",
+    "session": "https://claude.ai/code/session_01BkHcyCi4o8LMxLjtghMGbH"
+  },
+  "landing": {
+    "revision": "ae786e8f7b66e204513aa0f0a1f988063d86aeadc41652dbc2a00d1d2245eb51",
+    "before": "ef37c3496fc19b94ae157cfccee4aaf3e484089d",
+    "after": "3dba1ae9bd70de339acb9fea18d1fd0e468f9b8e",
+    "by": {
+      "kind": "status",
+      "login": "fieldmouseworks-steward[bot]"
+    },
+    "at": 1793388396240
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41113884831/job/124262968558"
+    },
+    {
+      "kind": "ci",
+      "check": "check / commits",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41113884831/job/124262968277"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/pull/66#pullrequestreview-5717653140"
+    }
+  ]
+}
