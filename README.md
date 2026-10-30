@@ -60,11 +60,11 @@ An automated playthrough now runs from New Game to the ending in 84 chapters, an
 ## Other projects
 
 ### [The Mortal Estate](https://github.com/TusanHomichi/the-mortal-estate)
-**Persistent online tactical RPG · Rust**
+**Online game · Rust**
 
-An original game about life, death, inheritance, and memory. The player is a lineage across successive lives; former characters remain part of the world rather than disappearing into deleted save records.
+An original game about a family line, a land where death stopped working, and a world that remembers. You play a lineage across lives: the dead cross to the land as it was and keep playing there, and ancestors stay part of the world. Anyone can host their own world.
 
-**Stage:** pre-release; the public source is not a released game. The [genesis ledger](https://github.com/TusanHomichi/the-mortal-estate/blob/main/docs/plans/genesis-ledger.md#current-checkpoint) tracks progress. Code and original game content have [separate licensing terms](https://github.com/TusanHomichi/the-mortal-estate#licensing).
+**Stage:** design. The [design doc](https://github.com/TusanHomichi/the-mortal-estate/blob/main/docs/DESIGN.md) is the plan, and the first playable slice comes next. Code and original game content are both [AGPL-3.0](https://github.com/TusanHomichi/the-mortal-estate#licensing).
 
 ## How I work
 
