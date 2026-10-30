@@ -1,0 +1,47 @@
+{
+  "conary": "note v1",
+  "change": "18cn726esxa7t3xjhk0watdnvk",
+  "repo": {
+    "owner": "TusanHomichi",
+    "name": "TusanHomichi"
+  },
+  "pr": 47,
+  "url": "https://github.com/TusanHomichi/TusanHomichi/pull/47",
+  "summary": "chore(deps): update fieldmouseworks/burrow digest to 19bf36c",
+  "task": null,
+  "author": {
+    "kind": "bot",
+    "login": "fieldmouseworks-workers[bot]",
+    "session": null
+  },
+  "landing": {
+    "revision": "360c3ac6b286992afd426cb9e3614ee0b8ce0a63038f9ff6f55456160a912131",
+    "before": "0bd5de417c965f6c7ffea03ff054a17def881f7a",
+    "after": "5dfa9b7780615190517892c4970622d57350217d",
+    "by": {
+      "kind": "status",
+      "login": "fieldmouseworks-steward[bot]"
+    },
+    "at": 1793336929396
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / commits",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41006351501/job/123902015349"
+    },
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41006351501/job/123902015134"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/pull/47#pullrequestreview-5708311536"
+    }
+  ]
+}
