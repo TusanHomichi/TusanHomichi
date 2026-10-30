@@ -33,7 +33,7 @@ Routes with passing replays: Debian 4.0 etch (2007) to Debian 13, Ubuntu 14.04 t
 **Stage:** early. CI proves each route's userland in a chroot. Kernels, bootloaders, and real reboots are tested separately in maintainer-run VMs, where every route except the newest, CentOS 4, has passed on real installs with a reboot after every hop. See the [README](https://github.com/FieldmouseWorks/wend#readme) and [spec](https://github.com/FieldmouseWorks/wend/blob/main/SPEC.md).
 
 ### [burrow](https://github.com/FieldmouseWorks/burrow)
-**NixOS modules for a machine run by an AI agent · Nix / Shell / Python**
+**NixOS modules for a machine run by an AI agent · Nix / Python / Rust / Shell**
 
 The server I develop on is run by talking to Claude Code, from a phone as often as a desk. burrow is the generic half of that setup. The agent gets the whole machine with no permission prompts, because nearly everything it can do undoes itself: ZFS snapshots before anything deletes files, a dead man's switch that reverts a system change unless it's confirmed within 10 minutes, and trial boots that fall back from a kernel that hangs. The few one-way doors (wiping disks, flashing firmware, deleting remote data, force-pushing main) still ask.
 
@@ -46,7 +46,7 @@ It also keeps the machine current unattended (flake inputs and Claude Code built
 
 Conary keeps the record of code that agents write, on top of git and GitHub: every pull request on the machine with its intent, who made it down to the agent session, its revisions, the checks and reviews that proved it, and where it landed. `cn why FILE:LINE` names the change that brought a line onto trunk, from the ledger or from git notes in any clone, and agents query the same ledger through an MCP server. The log is anchored at a ref on GitHub, so one that loses history is refused.
 
-**Stage:** early development. Recording and `why` work today; undo, always as a new change, is next, and landing changes in place of burrow's steward comes later. MIT. See the [README](https://github.com/FieldmouseWorks/Conary#readme) and [milestones](https://github.com/FieldmouseWorks/Conary/blob/main/docs/DESIGN.md#12-milestones).
+**Stage:** early development. Recording and `why` work today; the merge train, which tests every ready change together in one run, is next, then undo, always as a new change; landing changes in place of burrow's steward comes later. MIT. See the [README](https://github.com/FieldmouseWorks/Conary#readme) and [milestones](https://github.com/FieldmouseWorks/Conary/blob/main/docs/DESIGN.md#12-milestones).
 
 ### [PSIV](https://github.com/TusanHomichi/PSIV)
 **Native game reconstruction · Rust / Godot / Python**
@@ -72,7 +72,7 @@ I prefer explicit state and typed contracts over hidden assumptions. Recovery, p
 
 Most of my code is now written by AI agents working under my direction. So most of my engineering goes into what keeps that honest: specs and contracts the agent works against, evidence a change has to produce before it lands (route replays, cartridge comparisons, VM boots), and machines where a mistake is cheap to undo instead of expensive to prevent.
 
-Every pull request in my repositories goes through the same loop. An AI reviewer reads the change, a Claude Code agent fixes or answers each finding and each failed check, and a steward merges only the exact commit that was reviewed and passed CI. Changes that can't be undone, such as secrets and database migrations, wait for me. Each repository's AGENTS.md says what its reviewers must flag, and one shared set of rules is kept in sync across all of them.
+Every pull request in my repositories goes through the same loop. An AI reviewer reads the change, a Claude Code agent fixes or answers each finding and each failed check, and a steward merges only the exact commit that was reviewed and passed CI. A change to a one-way path, like secrets or a database migration, gets judged first, and waits for me only if it can't be undone or the call is mine. Each repository's AGENTS.md says what its reviewers must flag, and one shared set of rules is kept in sync across all of them.
 
 I tune the loop from measurements, not impressions. When reviews were slow, I timed each stage and found most of the wait was a 15-minute poll, so every step now starts from a GitHub event, and reviews arrive about 3 minutes after a push. When I ran two reviewers side by side, I scored their findings and cost and dropped the one that didn't pay for itself. When fixes kept taking extra review rounds, the cause was new findings on code the last fix wrote, so each finding now spells out everything a complete fix has to cover.
 
