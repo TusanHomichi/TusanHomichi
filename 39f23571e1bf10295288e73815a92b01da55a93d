@@ -1,0 +1,47 @@
+{
+  "conary": "note v1",
+  "change": "7376q3rajya7sd31yw16z757fw",
+  "repo": {
+    "owner": "tusanhomichi",
+    "name": "tusanhomichi"
+  },
+  "pr": 64,
+  "url": "https://github.com/tusanhomichi/tusanhomichi/pull/64",
+  "summary": "readme: say what waits for me, Conary's next step and burrow's languages as they are now",
+  "task": "https://claude.ai/code/project/chan_01Ad4f4oDXfFTCEzLHzMTD8q?thread=cmsg_01Ad4f4oDXfFTCEzLHzMTD8q84udvYATLZvGtN19REH7oW",
+  "author": {
+    "kind": "agent",
+    "login": "TusanHomichi",
+    "session": "https://claude.ai/code/session_01BkHcyEGkLfyDuGLXdEBBzS"
+  },
+  "landing": {
+    "revision": "afb85249d0497e569cbe27413d2b0b895cb6ffbb9cda028f54efe91af2eb42b4",
+    "before": "f56ba6f2dc04811958567c92206c35fb6433f365",
+    "after": "39f23571e1bf10295288e73815a92b01da55a93d",
+    "by": {
+      "kind": "status",
+      "login": "fieldmouseworks-steward[bot]"
+    },
+    "at": 1793384822938
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / commits",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41106510469/job/124237633236"
+    },
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41106510469/job/124237633564"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/pull/64#pullrequestreview-5716884884"
+    }
+  ]
+}
