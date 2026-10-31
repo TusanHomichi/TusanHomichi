@@ -1,0 +1,47 @@
+{
+  "conary": "note v1",
+  "change": "0bazfwjhpzfm70bdrywazym0wa",
+  "repo": {
+    "owner": "tusanhomichi",
+    "name": "tusanhomichi"
+  },
+  "pr": 81,
+  "url": "https://github.com/tusanhomichi/tusanhomichi/pull/81",
+  "summary": "readme: The Mortal Estate is past design, and PSIV keeps to its one ROM line",
+  "task": null,
+  "author": {
+    "kind": "person",
+    "login": "TusanHomichi",
+    "session": null
+  },
+  "landing": {
+    "revision": "21080c52f22763b5f0666f9eaec618e0265ed50e409dc8929b8377719acb94b9",
+    "before": "ca14af00f7e32fa6b5bc288d2cc68186f4df9f5f",
+    "after": "242f89369aced0c4547360e1345c5eff9e7010cb",
+    "by": {
+      "kind": "status",
+      "login": "fieldmouseworks-steward[bot]"
+    },
+    "at": 1793438379296
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / commits",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41184412490/job/124488255471"
+    },
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41184412490/job/124488255107"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/pull/81#pullrequestreview-5722131797"
+    }
+  ]
+}
