@@ -1,0 +1,47 @@
+{
+  "conary": "note v1",
+  "change": "6hzcpwczba1j5bfykb0jb8c9dx",
+  "repo": {
+    "owner": "tusanhomichi",
+    "name": "tusanhomichi"
+  },
+  "pr": 93,
+  "url": "https://github.com/tusanhomichi/tusanhomichi/pull/93",
+  "summary": "deps: lock file maintenance (nix)",
+  "task": null,
+  "author": {
+    "kind": "bot",
+    "login": "fieldmouseworks-workers[bot]",
+    "session": null
+  },
+  "landing": {
+    "revision": "3f4f02f61b8dd40559c1807b42de3a1eefd2eaa7cf419bdc0bcab8667c10d365",
+    "before": "124521842734ed238e55e6fd665910486110fbba",
+    "after": "a8b2466c826812b348af26f62aff2b3454df4b42",
+    "by": {
+      "kind": "status",
+      "login": "fieldmouseworks-steward[bot]"
+    },
+    "at": 1793444850573
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41194914487/job/124519047873"
+    },
+    {
+      "kind": "ci",
+      "check": "check / commits",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41194914487/job/124519047681"
+    },
+    {
+      "kind": "ci",
+      "check": "renovate/stability-days",
+      "result": "pass",
+      "source": "https://docs.renovatebot.com/key-concepts/minimum-release-age/"
+    }
+  ]
+}
