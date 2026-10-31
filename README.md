@@ -51,7 +51,7 @@ Conary keeps the record of code that agents write, on top of git and GitHub: eve
 ### [PSIV](https://github.com/TusanHomichi/PSIV)
 **Native game reconstruction · Rust / Godot / Python**
 
-A native reimplementation of *Phantasy Star IV*, built to be easy to mod. Python extracts a local data pack from a user-supplied US ROM, Rust reproduces the game rules frame by frame, and Godot handles presentation and input. No emulator runs while you play. Development compares native behavior against the original cartridge.
+A native reimplementation of *Phantasy Star IV*, built to be easy to mod. Rust reproduces the game rules frame by frame, and Godot handles presentation and input. No emulator runs while you play. Development compares native behavior against the original cartridge.
 
 An automated playthrough now runs from New Game to the ending in 84 chapters, and the native game replays all 84 with every chapter save matching byte for byte. Every player technique and skill, and every enemy ability up to Dark Force 2, is implemented from the cartridge's code. There's a [modding guide](https://github.com/TusanHomichi/PSIV/blob/main/docs/MODDING.md).
 
@@ -64,7 +64,7 @@ An automated playthrough now runs from New Game to the ending in 84 chapters, an
 
 An original game about a family line, a land where death stopped working, and a world that remembers. You play a lineage across lives: the dead cross to the land as it was and keep playing there, and ancestors stay part of the world. Anyone can host their own world.
 
-**Stage:** design. The [design doc](https://github.com/TusanHomichi/the-mortal-estate/blob/main/docs/DESIGN.md) is the plan, and the first playable slice comes next. Code and original game content are both [AGPL-3.0](https://github.com/TusanHomichi/the-mortal-estate#licensing).
+**Stage:** building the [first playable slice](https://github.com/TusanHomichi/the-mortal-estate/blob/main/docs/DESIGN.md#the-first-playable-slice). The rules and the world are tested headless on one small map, a server hosts a world by invite and keeps it through a restart, and a client plays it. Code and original game content are both [AGPL-3.0](https://github.com/TusanHomichi/the-mortal-estate#licensing).
 
 ## How I work
 
