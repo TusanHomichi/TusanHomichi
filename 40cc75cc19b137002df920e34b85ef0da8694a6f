@@ -1,0 +1,89 @@
+{
+  "conary": "note v1",
+  "change": "0zahscpdat0t6v8zb3qyqej0m1",
+  "repo": {
+    "owner": "TusanHomichi",
+    "name": "TusanHomichi"
+  },
+  "pr": 108,
+  "url": "https://github.com/TusanHomichi/TusanHomichi/pull/108",
+  "summary": "ci: run a retargeted PR's gate from a workflow of its own",
+  "task": "FieldmouseWorks/remi#210",
+  "author": {
+    "kind": "person",
+    "login": "TusanHomichi",
+    "session": null
+  },
+  "landing": {
+    "revision": "7c84b243d128cf1ef4ba12069bcf146b1d8caa8ad4d96c6d6bc684df90aae798",
+    "before": "0851d9a20bb4311f25d1bbcca5db1a2d6bdfb149",
+    "after": "40cc75cc19b137002df920e34b85ef0da8694a6f",
+    "by": {
+      "kind": "status",
+      "login": "fieldmouseworks-steward[bot]"
+    },
+    "at": 1793481180305
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41241506279/job/124656217176"
+    },
+    {
+      "kind": "ci",
+      "check": "check / commits",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41241506279/job/124656190997"
+    },
+    {
+      "kind": "ci",
+      "check": "check / lane into main",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41241506279/job/124656190675"
+    },
+    {
+      "kind": "ci",
+      "check": "house",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41241505900/job/124656189706"
+    },
+    {
+      "kind": "ci",
+      "check": "house/title (#108)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41241505900"
+    },
+    {
+      "kind": "ci",
+      "check": "house/rust-first (#108)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41241505900"
+    },
+    {
+      "kind": "ci",
+      "check": "house/timers (#108)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41241505900"
+    },
+    {
+      "kind": "ci",
+      "check": "house/file-size (#108)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41241505900"
+    },
+    {
+      "kind": "ci",
+      "check": "house/model-names (#108)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41241505900"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/pull/108#pullrequestreview-5724945302"
+    }
+  ]
+}
