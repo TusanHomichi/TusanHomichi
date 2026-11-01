@@ -1,0 +1,83 @@
+{
+  "conary": "note v1",
+  "change": "004gymd546b2d5sdrzzmw4erz2",
+  "repo": {
+    "owner": "tusanhomichi",
+    "name": "tusanhomichi"
+  },
+  "pr": 152,
+  "url": "https://github.com/tusanhomichi/tusanhomichi/pull/152",
+  "summary": "deps: update fieldmouseworks/burrow digest to 2984081",
+  "task": null,
+  "author": {
+    "kind": "bot",
+    "login": "fieldmouseworks-workers[bot]",
+    "session": null
+  },
+  "landing": {
+    "revision": "39a8784fb4406cedd6d2788003e8a8ba1f0c5c6655c5a7f9f5d9837ca09d7d04",
+    "before": "c5fd0e6bd9ddd073dc9bc4f8d3bb2f5e614ef948",
+    "after": "f86a01a572dd979d080542524ad282e918ce96fd",
+    "by": {
+      "kind": "status",
+      "login": "fieldmouseworks-steward[bot]"
+    },
+    "at": 1793566295174
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / commits",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41347868548/job/124971467026"
+    },
+    {
+      "kind": "ci",
+      "check": "check / lane into main",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41347868548/job/124971466775"
+    },
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41347868548/job/124971492541"
+    },
+    {
+      "kind": "ci",
+      "check": "house",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41347868152/job/124971465203"
+    },
+    {
+      "kind": "ci",
+      "check": "house/title (#152)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41347868152"
+    },
+    {
+      "kind": "ci",
+      "check": "house/rust-first (#152)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41347868152"
+    },
+    {
+      "kind": "ci",
+      "check": "house/timers (#152)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41347868152"
+    },
+    {
+      "kind": "ci",
+      "check": "house/file-size (#152)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41347868152"
+    },
+    {
+      "kind": "ci",
+      "check": "house/model-names (#152)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41347868152"
+    }
+  ]
+}
