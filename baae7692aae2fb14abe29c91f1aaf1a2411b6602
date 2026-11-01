@@ -1,0 +1,89 @@
+{
+  "conary": "note v1",
+  "change": "17stm0rygf60yayq7tn548s81g",
+  "repo": {
+    "owner": "tusanhomichi",
+    "name": "tusanhomichi"
+  },
+  "pr": 126,
+  "url": "https://github.com/tusanhomichi/tusanhomichi/pull/126",
+  "summary": "deps: lock file maintenance (nix)",
+  "task": null,
+  "author": {
+    "kind": "bot",
+    "login": "fieldmouseworks-workers[bot]",
+    "session": null
+  },
+  "landing": {
+    "revision": "aeb42f1ca1fbefbbfe7c512dac0501dbfd3524a771849b94aa1a35cc9c68e571",
+    "before": "9615efebffad654c2a9993cd344f868e32946a68",
+    "after": "baae7692aae2fb14abe29c91f1aaf1a2411b6602",
+    "by": {
+      "kind": "status",
+      "login": "fieldmouseworks-steward[bot]"
+    },
+    "at": 1793518304006
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / commits",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41284686026/job/124783488106"
+    },
+    {
+      "kind": "ci",
+      "check": "check / lane into main",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41284686026/job/124783488016"
+    },
+    {
+      "kind": "ci",
+      "check": "house",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41284685849/job/124783487056"
+    },
+    {
+      "kind": "ci",
+      "check": "renovate/stability-days",
+      "result": "pass",
+      "source": "https://docs.renovatebot.com/key-concepts/minimum-release-age/"
+    },
+    {
+      "kind": "ci",
+      "check": "house/title (#126)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41284685849"
+    },
+    {
+      "kind": "ci",
+      "check": "house/rust-first (#126)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41284685849"
+    },
+    {
+      "kind": "ci",
+      "check": "house/timers (#126)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41284685849"
+    },
+    {
+      "kind": "ci",
+      "check": "house/file-size (#126)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41284685849"
+    },
+    {
+      "kind": "ci",
+      "check": "house/model-names (#126)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41284685849"
+    },
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41284686026/job/124783510411"
+    }
+  ]
+}
