@@ -46,7 +46,7 @@ It also keeps the machine current unattended (flake inputs and Claude Code built
 
 Conary keeps the record of code that agents write, on top of git and GitHub: every pull request on the machine with its intent, who made it down to the agent session, its revisions, the checks and reviews that proved it, and where it landed. `cn why FILE:LINE` names the change that brought a line onto trunk, from the ledger or from git notes in any clone, and agents query the same ledger through an MCP server. The log is anchored at a ref on GitHub, so one that loses history is refused.
 
-**Stage:** early development. Recording and `why` work today; the merge train, which tests every ready change together in one run, is next, then undo, always as a new change; landing changes in place of burrow's steward comes later. MIT. See the [README](https://github.com/FieldmouseWorks/Conary#readme) and [milestones](https://github.com/FieldmouseWorks/Conary/blob/main/docs/DESIGN.md#12-milestones).
+**Stage:** early development. Recording and `why` work today; the merge train, which tests every ready change together in one run, is in progress and has landed one repository's PRs since 2026-10-30; undo, always as a new change, is next; landing changes in place of burrow's steward comes later. MIT. See the [README](https://github.com/FieldmouseWorks/Conary#readme) and [milestones](https://github.com/FieldmouseWorks/Conary/blob/main/docs/DESIGN.md#12-milestones).
 
 ### [PSIV](https://github.com/TusanHomichi/PSIV)
 **Native game reconstruction · Rust / Godot / Python**
