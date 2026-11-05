@@ -1,0 +1,131 @@
+{
+  "conary": "note v1",
+  "change": "7ybeyv8wzhzemf1hw54v87rzkx",
+  "repo": {
+    "owner": "tusanhomichi",
+    "name": "tusanhomichi"
+  },
+  "pr": 188,
+  "url": "https://github.com/tusanhomichi/tusanhomichi/pull/188",
+  "summary": "deps: update fieldmouseworks/burrow to 94f8526",
+  "task": null,
+  "author": {
+    "kind": "bot",
+    "login": "fieldmouseworks-workers[bot]",
+    "session": null
+  },
+  "landing": {
+    "revision": "95351456e9f8f72146468de22915256a8b01eb1d98d62addaa6c51b352a4a5b2",
+    "before": "d220b1e58a81463e8e44194746d7ed3d4e948ba1",
+    "after": "ffd7f7b02e394ac4066450207c00758d81bcbb49",
+    "by": {
+      "kind": "status",
+      "login": "fieldmouseworks-steward[bot]"
+    },
+    "at": 1793868262946
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996576371/job/127141152904"
+    },
+    {
+      "kind": "ci",
+      "check": "house",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996582333/job/127141131702"
+    },
+    {
+      "kind": "ci",
+      "check": "check / lane into main",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996576371/job/127141114061"
+    },
+    {
+      "kind": "ci",
+      "check": "check / negative",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996576371/job/127141113950"
+    },
+    {
+      "kind": "ci",
+      "check": "check / commits",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996576371/job/127141113693"
+    },
+    {
+      "kind": "ci",
+      "check": "house",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996576031/job/127141111965"
+    },
+    {
+      "kind": "ci",
+      "check": "renovate/stability-days",
+      "result": "pass",
+      "source": "https://docs.renovatebot.com/key-concepts/minimum-release-age/"
+    },
+    {
+      "kind": "ci",
+      "check": "house/title (#188)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996582333"
+    },
+    {
+      "kind": "ci",
+      "check": "house/title (#188)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996576031"
+    },
+    {
+      "kind": "ci",
+      "check": "house/rust-first (#188)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996582333"
+    },
+    {
+      "kind": "ci",
+      "check": "house/rust-first (#188)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996576031"
+    },
+    {
+      "kind": "ci",
+      "check": "house/timers (#188)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996582333"
+    },
+    {
+      "kind": "ci",
+      "check": "house/timers (#188)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996576031"
+    },
+    {
+      "kind": "ci",
+      "check": "house/file-size (#188)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996582333"
+    },
+    {
+      "kind": "ci",
+      "check": "house/file-size (#188)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996576031"
+    },
+    {
+      "kind": "ci",
+      "check": "house/model-names (#188)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996582333"
+    },
+    {
+      "kind": "ci",
+      "check": "house/model-names (#188)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/41996576031"
+    }
+  ]
+}
