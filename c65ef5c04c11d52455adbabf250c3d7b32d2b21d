@@ -1,0 +1,95 @@
+{
+  "conary": "note v1",
+  "change": "3y54bpab0wkmtqccn1d5e67406",
+  "repo": {
+    "owner": "tusanhomichi",
+    "name": "tusanhomichi"
+  },
+  "pr": 197,
+  "url": "https://github.com/tusanhomichi/tusanhomichi/pull/197",
+  "summary": "conary: undo works today, and the roadmap link follows its new anchor",
+  "task": null,
+  "author": {
+    "kind": "person",
+    "login": "TusanHomichi",
+    "session": null
+  },
+  "landing": {
+    "revision": "1ee1b839e7587e0aeaf6d1cbf96f8e77926a96212ec08d2a6a399c2f6909689e",
+    "before": "b33e8f175937432ffba992ebb6ce8ff2329420d6",
+    "after": "c65ef5c04c11d52455adbabf250c3d7b32d2b21d",
+    "by": {
+      "kind": "status",
+      "login": "fieldmouseworks-steward[bot]"
+    },
+    "at": 1793928616780
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / lane into main",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/42143990392/job/127650918196"
+    },
+    {
+      "kind": "ci",
+      "check": "check / commits",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/42143990392/job/127650917823"
+    },
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/42143990392/job/127650956349"
+    },
+    {
+      "kind": "ci",
+      "check": "check / negative",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/42143990392/job/127650918264"
+    },
+    {
+      "kind": "ci",
+      "check": "house",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/42143990052/job/127650917330"
+    },
+    {
+      "kind": "ci",
+      "check": "house/title (#197)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/42143990052"
+    },
+    {
+      "kind": "ci",
+      "check": "house/rust-first (#197)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/42143990052"
+    },
+    {
+      "kind": "ci",
+      "check": "house/timers (#197)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/42143990052"
+    },
+    {
+      "kind": "ci",
+      "check": "house/file-size (#197)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/42143990052"
+    },
+    {
+      "kind": "ci",
+      "check": "house/model-names (#197)",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/actions/runs/42143990052"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/TusanHomichi/TusanHomichi/pull/197#pullrequestreview-5794544295"
+    }
+  ]
+}
