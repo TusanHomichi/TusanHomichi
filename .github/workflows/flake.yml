@@ -4,8 +4,11 @@ name: flake
 on:
   # A PR retargeted onto another branch runs from flake-retarget.yml.
   pull_request:
+  # PRs land through conaryd's merge train, which pushes each candidate it
+  # would land (main with the PRs in it on top) to a conary/train/ branch: the
+  # gate runs there and attests the tree that lands.
   push:
-    branches: [main]
+    branches: [main, "conary/train/**"]
 jobs:
   check:
     uses: FieldmouseWorks/burrow/.github/workflows/flake-check.yml@202d1c06990656145a30a290b8dd134f61006b4a # main
