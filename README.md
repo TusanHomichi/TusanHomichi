@@ -1,12 +1,12 @@
 # Peter Permenter
 
-**Rust systems and backend engineering · Linux and agent infrastructure · Game reconstruction**
+**AI-agent systems and infrastructure engineering · Rust, Linux, NixOS · Game reconstruction**
 
-I'm Peter. I build Linux upgrade tooling, infrastructure for running AI coding agents, self-hosted public-safety software, and native game reconstructions. I care about software you can inspect, recover, and keep running without a permanent vendor relationship.
+I'm Peter. I build Linux infrastructure, agent-run systems, self-hosted public-safety software, and native game reconstructions—by directing AI coding agents. Agents write the code; my work is the architecture, specs, workspace rules (`AGENTS.md`), verification gates, and undoable infrastructure that keep it honest. I care about software you can inspect, recover, and keep running without a permanent vendor relationship.
 
 My infrastructure, agent tooling and public-safety work lives at **[Fieldmouse Works](https://github.com/FieldmouseWorks)**. My personal repositories cover native game reconstruction and persistent worlds.
 
-**Looking for systems/backend work, remote or based in Europe.** I live in the Pacific Northwest and would like to move to Europe. I work best in writing: clear contracts, design documents, reviewable changes, and evidence from real machines.
+**Looking for remote AI-native systems, infrastructure, or platform engineering roles (US or Europe).** I live in the Pacific Northwest and would like to move to Europe. I work with coding agents daily and look for teams where agents are part of the engineering workflow and interview process. I work best in writing: clear contracts, design documents, reviewable changes, and evidence from real machines.
 
 [Fieldmouse Works](https://github.com/FieldmouseWorks) · [Current work](#current-work) · [Other projects](#other-projects) · [How I work](#how-i-work) · [Contact](#contact)
 
@@ -33,11 +33,11 @@ Routes with passing replays: Debian 4.0 etch (2007) to Debian 13, Ubuntu 14.04 t
 **Stage:** early. CI proves each route's userland in a chroot. Kernels, bootloaders, and real reboots are tested separately in maintainer-run VMs, where every route except the newest, CentOS 4, has passed on real installs with a reboot after every hop. See the [README](https://github.com/FieldmouseWorks/wend#readme) and [spec](https://github.com/FieldmouseWorks/wend/blob/main/SPEC.md).
 
 ### [burrow](https://github.com/FieldmouseWorks/burrow)
-**NixOS modules for a machine run by an AI agent · Nix / Python / Rust / Shell**
+**NixOS modules for a machine run with coding agents · Nix / Python / Rust / Shell**
 
-The server I develop on is run by talking to Claude Code, from a phone as often as a desk. burrow is the generic half of that setup. The agent gets the whole machine with no permission prompts, because nearly everything it can do undoes itself: ZFS snapshots before anything deletes files, a dead man's switch that reverts a system change unless it's confirmed within 10 minutes, and trial boots that fall back from a kernel that hangs. The few one-way doors (wiping disks, flashing firmware, deleting remote data, force-pushing main) still ask.
+The server I develop on is run with coding agents, from a phone as often as a desk. burrow is the generic half of that setup. Agents work without permission prompts because nearly everything they can do undoes itself: ZFS snapshots before anything deletes files, a dead man's switch that reverts a system change unless it's confirmed within 10 minutes, and trial boots that fall back from a kernel that hangs. The few one-way doors (wiping disks, flashing firmware, deleting remote data, force-pushing main) still ask.
 
-It also keeps the machine current unattended (flake inputs and Claude Code built, VM-tested, health-checked and reverted on failure; Renovate across every repository; new CVEs turned into agent jobs the same hour), runs every pull request through a review-and-merge steward, hands project work to per-project agent sessions, and gives a risky task its own microVM with allowlisted egress and no GitHub token.
+It also keeps the machine current unattended (flake inputs and agent tooling built, VM-tested, health-checked and reverted on failure; Renovate across every repository; new CVEs turned into agent jobs the same hour), runs every pull request through an automated review-and-merge pipeline backed by Conary's ledger, hands project work to headless queued sessions, and isolates modular engine plugins in per-engine QEMU microVMs on ZFS clones with filtered egress proxies and explicit capability grants.
 
 **Stage:** in daily use on one machine; options may still move. VM tests boot the sandboxes under nested KVM. MIT. See the [README](https://github.com/FieldmouseWorks/burrow#readme).
 
@@ -46,16 +46,16 @@ It also keeps the machine current unattended (flake inputs and Claude Code built
 
 Conary keeps the record of code that agents write, on top of git and GitHub: every pull request on the machine with its intent, who made it down to the agent session, its revisions, the checks and reviews that proved it, and where it landed. `cn why FILE:LINE` names the change that brought a line onto trunk, from the ledger or from git notes in any clone, and agents query the same ledger through an MCP server. The log is anchored at a ref on GitHub, so one that loses history is refused.
 
-**Stage:** early development. Recording, `why` and undo work today: undo reverts a landed change by its PR, a session's changes or everything since a time, always as a new change. Conary also decides each change's class (which ones need a review round, and which a person) and runs the merge train, which tests ready changes together in one run (a change that needs a person's yes runs alone) and has landed one repository's PRs since 2026-10-30. burrow's steward still asks for the reviews and says when a PR is settled; Conary takes over its jobs one at a time. MIT. See the [README](https://github.com/FieldmouseWorks/Conary#readme) and [roadmap](https://github.com/FieldmouseWorks/Conary/blob/main/docs/DESIGN.md#12-roadmap).
+**Stage:** early development. Recording, `why` and undo work today: undo reverts a landed change by its PR, a session's changes or everything since a time, always as a new change. Conary also decides each change's class (`cn class` / `cn policy`), runs the merge train (testing ready changes together in one gate run), and shadows landing decisions alongside burrow's steward as it takes over the steward's jobs one at a time. MIT. See the [README](https://github.com/FieldmouseWorks/Conary#readme) and [roadmap](https://github.com/FieldmouseWorks/Conary/blob/main/docs/DESIGN.md#12-roadmap).
 
 ### [PSIV](https://github.com/TusanHomichi/PSIV)
 **Native game reconstruction · Rust / Godot / Python**
 
-A native reimplementation of *Phantasy Star IV*, built to be easy to mod. Rust reproduces the game rules frame by frame, and Godot handles presentation and input. No emulator runs while you play. Development compares native behavior against the original cartridge.
+A native reimplementation of *Phantasy Star IV*, built to be easy to mod. Rust reproduces the game rules frame by frame, and Godot handles presentation and input. No emulator runs while you play. Development verifies native behavior against the original cartridge.
 
-An automated playthrough now runs from New Game to the ending in 84 chapters, and the native game replays all 84 with every chapter save matching byte for byte. Every player technique and skill, and every enemy ability up to Dark Force 2, is implemented from the cartridge's code. There's a [modding guide](https://github.com/TusanHomichi/PSIV/blob/main/docs/MODDING.md).
+An automated playthrough runs from New Game to the ending in 84 chapters, and the native game replays all 84 with every chapter save matching byte for byte. Every player technique and skill, and all 83 distinct regular enemy abilities through the final boss, are implemented from the cartridge's code. There's a [modding guide](https://github.com/TusanHomichi/PSIV/blob/main/docs/MODDING.md).
 
-**Stage:** active development; presentation fidelity (some animations, scene staging, audio timing) is not finished. Linux and Steam Deck today; Windows and macOS are part of 1.0. Requires a user-supplied ROM; no ROM or extracted game assets are distributed. See [where it stands](https://github.com/TusanHomichi/PSIV#status).
+**Stage:** [v1.0.2](https://github.com/TusanHomichi/PSIV/releases/latest), playable start-to-finish on Linux, Steam Deck, Windows, and macOS. Requires a user-supplied ROM; no ROM or extracted game assets are distributed. See the [README](https://github.com/TusanHomichi/PSIV#readme).
 
 ## Other projects
 
@@ -70,9 +70,9 @@ An original game about a family line, a land where death stopped working, and a 
 
 I prefer explicit state and typed contracts over hidden assumptions. Recovery, portability, and failure behavior belong in the design from the start. Documentation and reproducible tests should make it possible for someone else to understand the system and verify the difficult parts.
 
-Most of my code is now written by AI agents working under my direction. So most of my engineering goes into what keeps that honest: specs and contracts the agent works against, evidence a change has to produce before it lands (route replays, cartridge comparisons, VM boots), and machines where a mistake is cheap to undo instead of expensive to prevent.
+Because AI coding agents write the code under my direction, most of my engineering goes into what keeps that honest: specs and contracts the agent works against, evidence a change has to produce before it lands (route replays, cartridge comparisons, VM boots), and machines where a mistake is cheap to undo instead of expensive to prevent.
 
-Every pull request in my repositories goes through the same loop. An AI reviewer reads the change, a Claude Code agent fixes or answers each finding and each failed check, and a steward merges only the exact change that was reviewed, once CI has passed on the commit it merges. A change to a one-way path, like secrets or CODEOWNERS, gets judged first, and waits for me only if it can't be undone or the call is mine. Each repository's AGENTS.md says what its reviewers must flag, and one shared set of rules is kept in sync across all of them.
+Every pull request in my repositories goes through the same loop. An AI reviewer reads the change, a coding agent fixes or answers each finding and each failed check, and the landing pipeline merges only the exact change that was reviewed, once CI has passed on the commit it merges. A change to a one-way path, like secrets or CODEOWNERS, gets judged first, and waits for me only if it can't be undone or the call is mine. Each repository's AGENTS.md says what its reviewers must flag, and one shared set of rules is kept in sync across all of them.
 
 I tune the loop from measurements, not impressions. When reviews were slow, I timed each stage and found most of the wait was a 15-minute poll, so every step now starts from a GitHub event, and reviews arrive about 3 minutes after a push. When I ran two reviewers side by side, I scored their findings and cost and dropped the one that didn't pay for itself. When fixes kept taking extra review rounds, the cause was new findings on code the last fix wrote, so each finding now spells out everything a complete fix has to cover.
 
@@ -82,6 +82,6 @@ The repositories distinguish implemented behavior from design targets. Their REA
 
 ## Contact
 
-For systems/backend roles (remote or based in Europe) or collaboration:
+For remote AI-native systems, infrastructure, or platform engineering roles (US or Europe), or collaboration:
 
 [peter@fieldmouseworks.com](mailto:peter@fieldmouseworks.com) · [fieldmouseworks.com](https://fieldmouseworks.com)
